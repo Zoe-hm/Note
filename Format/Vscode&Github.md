@@ -17,4 +17,9 @@ git branch -D master #删除master分支
 git branch -a #查看所有分支
 git branch -r #查看远程分支
 ```
-真难
+很奇怪：
+git branch -vv #发现有库名的main，有origin的main
+所以决定删除远程的origin main：点三个点，选择远程中的删除远程存储库，点击文本框中想要删除的origin main。
+之后想要上传，就写：
+git pull Github的库名 main
+在查看远程库：git branch -r就只有一个main了。
