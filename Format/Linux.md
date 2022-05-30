@@ -1,0 +1,9 @@
+mkdir
+touch
+cd
+ll
+echo
+tail
+cat
+vi
+vim

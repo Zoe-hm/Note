@@ -6,7 +6,8 @@
 ```Git
 git branch -m main 或者[git branch -m master main]#改分支master为main
 git branch -v #看看有没有改成main
-git remote add origin git@github.com:你的Github名/库名.git #添加远程
+//git remote add origin git@github.com:你的Github名/库名.git #添加远程
+git remote add 库名 git@github.com:你的Github名/库名.git #添加远程
 git pull origin main 或者[git pull origin main -f]#把本地仓库连接到远程库
 git pull --rebase origin main #Github远程有ReadMe文件，而本地没有，生成一个。
 git push orgin main #推送上传Github
