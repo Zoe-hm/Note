@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- base描述了基本的链接地址/链接目标 -->
+        <base href="http://www.runoob.com/images/" target="_blank">
+        <!-- link定义了文档与外部资源之间的关系 定义资源引用地址-->
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <meta charset="utf-8">
+        <meta http-equiv="refresh" content="30">
+        <meta name="description" content="HTML基础">
+        <title>标签页名称</title>
+        <!-- style添加样式来渲染 HTML 文档 -->
+        <style type="text/css">
+            body {background-color:rgb(245, 231, 242)}
+            p {color:rgb(153, 0, 255)}
+        </style>
+    </head>
+    <!-- body主体 -->
+    <body>
+        <h1>我的第一个标题</h1>
+        <!-- <hr>创建水平线 -->
+        <hr>
+        <p>我的第一个段落</p>
+        <p>这个<br>段落<br>是分行</p>
+        <img src="/images/girl.jpeg" alt="图像定义一串预备的可替换的文本：一个女孩图像" width="32" height="32" /><br>
+        <pre>
+            使用pre标签
+            控制空行和 空格 进行控制
+        </pre>
+    </body>
+    <body>
+        <a href="https://baidu.com">百度链接</a><br>
+        <a href="#C1">查看我的第一个标题</a><br>
+        <a href="http://www.runoob.com/" target="_top">点击这里!跳出边框</a><br>
+        <a href="http://www.runoob.com/" style="text-decoration:none;">这个没有下划线</a><br>
+        <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">发送邮件</a>
+    </body>
+    
+    <body>
+        <b>加粗</b>有关字体的<br>
+        <strong>加重语气</strong><br>
+        <i>斜体</i><br>
+        <em>着重文字</em><br>
+        <sub>下标</sub><br>
+        <sup>上标</sup><br>
+        <small>小字号</small><br>
+        <p>My favorite color is <del>删除blue</del> <ins>插入red</ins>!</p>
+    </body>
+
+    <body>
+        <code>电脑自动输出</code><br>
+        <br />
+        <kbd>键盘输入</kbd>
+        <br />
+        <samp>计算机代码样本</samp>
+        <br />
+        <var>计算机变量</var>
+        <br />
+        <address>地址：
+            Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+            Example.com<br>
+            Box 564, Disneyland
+        </address>
+    </body>
+
+    <body>
+        <p>
+            <abbr title="etcetera">缩写etc.</abbr>
+            <br />
+            <acronym title="World Wide Web">WWW</acronym>
+        </p>
+        <p><bdo dir="rtl">该段落文字从右到左显示。</bdo></p>
+        <p><q>长短不一的引用句</q></p>
+        <cite>定义引用、引证</cite><br>
+        <dfn>定义一个定义项目</dfn>
+    </body>
+
+    <body>样式CSS
+        <head>
+            <style type="text/css">
+                h2 {color:red;}
+                p {color:rgb(12, 138, 136);}
+                </style>
+        </head>
+        <h2>这是一个标题</h2>
+        <h3 style="text-align:center;">居中对齐的标题</h3>
+        <p>这是一个段落。</p>
+        <p style="color:blue;margin-left:20px;">这是内联样式的一个段落。</p>
+        <p style="background-color:rgb(227, 159, 236);">有背景颜色的段落</p>
+        <p style="font-family:arial;color:rgb(255, 200, 0);font-size:20px;">一个段落。</p>
+    </body>
+    
+    <body>
+        <p>创建图片链接:
+            <a href="http://www.runoob.com/html/html-tutorial.html">
+            <img  border="10" src="/images/logo.png" alt="HTML 教程" width="32" height="32"></a>
+        </p> 
+        <p>无边框的图片链接:
+            <a href="http://www.runoob.com/html/html-tutorial.html">
+            <img border="0" src="/images/logo.png" alt="HTML 教程" width="32" height="32"></a>
+        </p>
+        <p>点击太阳或其他行星，注意变化：</p>
+
+        <img src="/images/picture.jpg" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+        <map name="planetmap">
+            <!-- area定义图像地图中的可点击区域 -->
+            <!-- shape指的是点击区域的形状，coords指的应该是链接区域在图片中的坐标（像素为单位）
+            rect:矩形  poly:多边形-->
+            <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+            <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+            <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+        </map>
+
+</body>
+    </body>
+</html>
