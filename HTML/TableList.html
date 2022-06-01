@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>表格和列表</title>
+    </head>
+    <body>
+        <!-- 表格 -->
+        <!-- 跨行跨列 cellpadding:单元格边距 cellspacing:单元格间距 -->
+        <table border="1" cellpadding="10">
+            <tr>
+              <th>Name</th>
+              <th colspan="2">Telephone</th>
+            </tr>
+            <tr>
+              <td>Bill Gates</td>
+              <td>555 77 854</td>
+              <td>555 77 855</td>
+            </tr>
+        </table>
+        <table border="1" cellspacing="10">
+            <tr>
+              <th>First Name:</th>
+              <td>Bill Gates</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Telephone:</th>
+              <td>555 77 854</td>
+            </tr>
+            <tr>
+              <td>555 77 855</td>
+            </tr>
+        </table>
+        <table border="1">
+            <tr>
+              <td>
+               <p>这是一个段落</p>
+               <p>这是另一个段落</p>
+              </td>
+            </tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>可以嵌套</td>
+                      </tr>
+                </table>
+            </td>
+        </table>
+    </body>
+    <!-- 列表 <li>:列表项 <dl>:列表 <dt>:列表项目 <dd>:列表项的描述-->
+    <body>
+        <h4>无序列表:</h4>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <h4>不同类型的无序：</h4>
+        <!-- style可以是"list-style-type:circle"，"list-style-type:square" -->
+        <ul style="list-style-type:disc">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemons</li>
+            <li>Oranges</li>
+        </ul>
+        <h4>有序列表:</h4>
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        <h4>不同类型的有序：</h4>
+        <!-- type可以是"a"，"I"，"i" -->
+        <ol type="A">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemons</li>
+            <li>Oranges</li>
+        </ol>
+        <h4>嵌套列表：</h4>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea
+              <ul>
+                <li>Black tea</li>
+                <li>Green tea
+                  <ul>
+                    <li>China</li>
+                    <li>Africa</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Milk</li>
+        </ul>
+        <h4>一个自定义列表：</h4>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+          </dl>
+    </body>
+    <!-- 
+        ul是unordered lists的缩写 (无序列表)
+        li是list item的缩写 （列表项目）
+        ol是ordered lists的缩写（有序列表）
+        dl是definition lists的英文缩写 (自定义列表)
+        dt是definition term的缩写 (自定义列表组)
+        dd是definition description的缩写（自定义列表描述）
+        nl是navigation lists的英文缩写 （导航列表）
+        tr是table row的缩写 （表格中的一行）
+        th是table header cell的缩写 （表格中的表头）
+        td是table data cell的缩写 （表格中的一个单元格） -->
+</html>
