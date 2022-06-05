@@ -142,4 +142,46 @@
             </tr>
         </table>
     </body>
+
+<!-- 脚本 -->
+    <body>
+        <!-- <noscript> 标签提供无法使用脚本时的替代内容 -->
+        <script>document.write("Hello World!")</script>
+        <noscript>抱歉，你的浏览器不支持 JavaScript!</noscript>
+        <br>
+        <script>
+            document.write("<h1>这是一个标题</h1>");
+            document.write("<p>这是一个段落。</p>");
+        </script>
+    </body>
+    <body>
+        <p id="demo">
+            JavaScript 可以触发事件，就像按钮点击。</p>
+        <script>
+            function myFunction()
+            {
+                document.getElementById("demo").innerHTML="Hello JavaScript!";
+            }
+        </script>
+            
+        <button type="button" onclick="myFunction()">点我</button>
+    </body>
+    <body>
+        <p id="demo2">
+            JavaScript 能改变 HTML 元素的样式。
+            </p>
+        <script>
+            function Function()
+            {
+                x=document.getElementById("demo2") // 找到元素
+                x.style.color="#ff0000";          // 改变样式
+            }
+        </script>
+        <button type="button" onclick="Function()">点击这里</button>
+    </body>
+<!-- 实体（Entities） -->
+    <body>
+        <!-- lt : less than gt : greater than amp : ampersand quot : quotation -->
+        <p>&nbsp;&lt;&gt;&amp;&quot......</p>
+    </body>
 </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FrameColor</Frame></title>
+</head>
+<!-- iframe框架 -->
+<body>
+    <!-- frameborder 属性用于定义iframe表示是否显示边框 -->
+    <iframe src="demo_iframe.htm" width="200" height="200" frameborder="0"></iframe>
+    <br>
+    <!-- 使用 iframe 来显示目标链接页面 -->
+    <iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+    <p><a href="http://www.runoob.com" target="iframe_a">RUNOOB.COM</a></p>
+</body>
+<!-- 颜色 -->
+<!-- HTML 颜色由一个十六进制符号来定义，这个符号由红色、绿色和蓝色的值组成（RGB）。
+每种颜色的最小值是0（十六进制：#00）。最大值是255（十六进制：#FF） -->
+<body>
+    <p style="background-color:#FFFF00">
+        通过十六进制设置背景颜色
+    </p>
+        
+    <p style="background-color:rgb(255,255,0)">
+        通过 rgb 值设置背景颜色
+    </p>
+        
+    <p style="background-color:yellow">
+        通过颜色名设置背景颜色
+    </p>
+<!-- RGBA 的意思是（Red-Green-Blue-Alpha）它是在 RGB 上扩展包括了 “alpha” 通道，
+    运行对颜色值设置透明度。 -->
+    <p style="background-color:rgba(255,255,0,0.25)">
+        通过 rbg 值设置背景颜色
+    </p>
+    <p style="background-color:rgba(255,255,0,0.5)">
+        通过 rbg 值设置背景颜色
+    </p>
+    <p style="background-color:rgba(255,255,0,0.75)">
+        通过 rbg 值设置背景颜色
+    </p>
+</body>
+</html>

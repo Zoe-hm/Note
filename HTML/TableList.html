@@ -3,8 +3,8 @@
     <head>
         <title>表格和列表</title>
     </head>
+<!-- 表格 -->
     <body>
-        <!-- 表格 -->
         <!-- 跨行跨列 cellpadding:单元格边距 cellspacing:单元格间距 -->
         <table border="1" cellpadding="10">
             <tr>
@@ -46,7 +46,7 @@
             </td>
         </table>
     </body>
-    <!-- 列表 <li>:列表项 <dl>:列表 <dt>:列表项目 <dd>:列表项的描述-->
+<!-- 列表 <li>:列表项 <dl>:列表 <dt>:列表项目 <dd>:列表项的描述-->
     <body>
         <h4>无序列表:</h4>
         <ul>
@@ -111,4 +111,104 @@
         tr是table row的缩写 （表格中的一行）
         th是table header cell的缩写 （表格中的表头）
         td是table data cell的缩写 （表格中的一个单元格） -->
+
+<!-- 表单 -->
+    <!-- 文本域（Text Fields），密码字段 -->
+    <body>
+      <!-- 密码字段字符不会明文显示，而是以星号 * 或圆点 . 替代 -->
+      <form action="">
+        Username: <input type="text" name="user"><br>
+        Password: <input type="password" name="password">
+      </form>
+    </body>
+    <!-- 单选按钮（Radio Buttons） -->
+    <body>
+      <form action="">
+        <input type="radio" name="sex" value="male">男<br>
+        <input type="radio" name="sex" value="female">女
+      </form>
+    </body>
+    <!-- 复选框（Checkboxes） -->
+    <body>
+      <form>
+        <input type="checkbox" name="vehicle" value="Bike">我喜欢自行车<br>
+        <input type="checkbox" name="vehicle" value="Car">我喜欢小汽车
+      </form>
+    </body>
+    <!-- 提交按钮(Submit) 表单的动作属性 action 定义了服务端的文件名 -->
+    <body>
+      <form name="input" action="html_form_action.php" method="get">
+        Username: <input type="text" name="user">
+        <input type="submit" value="Submit">
+      </form>
+    </body>
+    <!-- 可选下拉列表框 -->
+    <body>
+      <form action="">
+        <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+        </select>
+      </form>
+    </body>
+    <!-- 带有预选值的下拉列表 -->
+    <body>
+      <form action="">
+        <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat" selected>Fiat</option>
+        <option value="audi">Audi</option>
+        </select>
+      </form>
+    </body>
+    <!-- 文本域 -->
+    <body>
+      <textarea rows="10" cols="30">
+        我是一个文本框。
+      </textarea>
+    </body>
+    <!-- 带标题边框的表单 -->
+    <body>
+      <form action="">
+        <fieldset>
+        <legend>Personal information:</legend>
+        Name: <input type="text" size="30"><br>
+        E-mail: <input type="text" size="30"><br>
+        Date of birth: <input type="text" size="10">
+        </fieldset>
+      </form>
+    </body>
+    <!-- 带有输入框和确认按钮的表单 -->
+    <body>
+      <form action="demo-form.php">
+        First name: <input type="text" name="FirstName" value="Mickey"><br>
+        Last name: <input type="text" name="LastName" value="Mouse"><br>
+        <input type="submit" value="提交">
+      </form>
+    </body>
+    <!-- 带有复选框的表单 -->
+    <body>
+      <form action="demo-form.php" method="get">
+        <input type="checkbox" name="vehicle[]" value="Bike"> I have a bike<br>
+        <input type="checkbox" name="vehicle[]" value="Car" checked="checked"> I have a car<br>
+        <input type="submit" value="提交">
+      </form>
+    </body>
+    <!-- 从表单发送电子邮件 -->
+    <body>
+      <h3>发送邮件到 someone@example.com:</h3>
+      <form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name" value="your name"><br>
+        E-mail:<br>
+        <input type="text" name="mail" value="your email"><br>
+        Comment:<br>
+        <input type="text" name="comment" value="your comment" size="50"><br><br>
+        <input type="submit" value="发送">
+        <input type="reset" value="重置">
+      </form>
+    </body>
 </html>
