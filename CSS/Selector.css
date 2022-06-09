@@ -1,0 +1,35 @@
+body {
+    background-color: antiquewhite;
+}
+h1 {
+    color: crimson;
+    text-align: center;
+}
+p {
+    font-family: Verdana;
+    font-size: 20px;
+}
+/* id选择器 */
+#para1 {
+    text-align: center;
+    color: deeppink;
+}
+/* 类选择器 类名不能以数字开头 */
+.center {
+    text-align: center;
+    color: blueviolet;
+}
+p.large {
+    font-size: 250%;
+}
+/* 通用选择器 影响页面上的每个 HTML 元素 */
+/* 需要将之前的样式注释掉 */
+/* * {
+    text-align: right;
+    color: lightslategray;
+} */
+/* 分组选择器 能最大程度地缩减代码 */
+/* h1, h2, p {
+    text-align: left;
+    color: teal;
+} */

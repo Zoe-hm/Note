@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connect to CSS</title>
+<!-- 以下是进行引用外部CSS样式文件的两种方法 -->
+    <link rel="stylesheet" type="text/css" href="../CSS/Selector.css">
+    <!-- <style type="text/css">@import url(../CSS/Selector.css);</style> -->
+<!-- 内部CSS -->
+    <!-- <style>
+        body {
+            background-color: blanchedalmond;
+        }
+        h1 {
+            margin-left: 40px;
+        }
+    </style> -->
+</head>
+<!-- 在不同样式表中为同一选择器（元素）定义了一些属性，则将使用最后读取的样式表中的值 -->
+<body>
+    <h1>使用外部样式文件CSS来格式化文本</h1>
+    <p id="para1">hello world!</p>
+    <p>本段不受样式影响</p>
+    <h2 class="center">居中的标题</h2>
+    <p class="center large">本段居中且使用大体</p>
+</body>
+<!-- 内行CSS -->
+<body>
+    <h1 style="color:tomato; border: 2px;">内行CSS</h1>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New HTML5</title>
+</head>
+<!-- Canvas -->
+<body>
+    <!-- HTML5 <canvas> 元素用于图形的绘制，通过脚本 (通常是JavaScript)来完成 -->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+        您的浏览器不支持 HTML5 canvas 标签。
+    </canvas>
+    <script>
+        var c=document.getElementById("myCanvas"); //找到 <canvas> 元素
+        var ctx=c.getContext("2d"); //创建 context 对象
+        ctx.fillStyle="#FF0000"; //绘制一个红色的矩形
+        ctx.fillRect(0,0,150,75);
+    </script>
+</body>
+<!-- SVG(Scalable Vector Graphics)使用 XML格式定义图形 -->
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <circle cx="100" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+    </svg>
+</body>
+<!-- MathML 数学标记语言，是一种基于XML（标准通用标记语言的子集）的标准 -->
+<body>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">	
+        <mrow>
+           <msup><mi>a</mi><mn>2</mn></msup>
+           <mo>+</mo>
+               
+           <msup><mi>b</mi><mn>2</mn></msup>
+           <mo>=</mo>
+               
+           <msup><mi>c</mi><mn>2</mn></msup>
+        </mrow>       
+    </math>
+</body>
+<!-- <br>
+<style type="text/css">
+    #div1, #div2 {
+	float:left; 
+	width:100px; 
+	height:35px; 
+	margin:10px;
+	padding:10px;
+	border:1px solid #aaaaaa;
+    }
+</style>
+<script>
+    function allowDrop(ev) {
+	    ev.preventDefault();
+    }
+
+    function drag(ev) {
+	    ev.dataTransfer.setData("Text",ev.target.id);
+    }
+
+    function drop(ev) {
+	    ev.preventDefault();
+	    var data=ev.dataTransfer.getData("Text");
+	    ev.target.appendChild(document.getElementById(data));
+    }
+</script>
+<body>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="/images/logo.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+    </div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</body> -->
+<br>
+<style type="text/css">
+    #div1 {width:350px;height:70px;padding:10px;border:1px solid #aaaaaa;}
+</style>
+<script>
+    function allowDrop(ev)
+    {
+        ev.preventDefault();
+    }
+    // drag(event)，它规定了被拖动的数据,dataTransfer.setData()方法设置被拖数据的数据类型和值
+    function drag(ev)
+    {
+        ev.dataTransfer.setData("Text",ev.target.id);//值是可拖动元素的 id ("drag1")
+    }//Text 是一个 DOMString 表示要添加到 drag object 的拖动数据的类型。
+    
+    //当放置被拖数据时，会发生 drop 事件
+    function drop(ev)
+    {
+        ev.preventDefault();//调用 preventDefault() 来避免浏览器对数据的默认处理
+        var data=ev.dataTransfer.getData("Text");//通过 dataTransfer.getData("Text") 方法获得被拖的数据。该方法将返回在 setData() 方法中设置为相同类型的任何数据
+        ev.target.appendChild(document.getElementById(data));//把被拖元素追加到放置元素（目标元素）中
+    }
+</script>
+<body>
+    <p>拖动 RUNOOB.COM 图片到矩形框中:</p>
+    <!-- 进行放置 - ondrop -->
+    <!-- 放到何处 - ondragover 事件规定在何处放置被拖动的数据 -->
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br>
+    <!-- 为了使元素可拖动，把 draggable 属性设置为 true -->
+    <!-- ondragstart 属性调用了一个函数 规定当元素被拖动时，会发生什么 -->
+    <img id="drag1" src="/images/logo.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
+</body>
+<br>
+<!-- Video(视频) -->
+<body>
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+    </video>
+    <!-- MP4 = 带有 H.264 视频编码和 AAC 音频编码的 MPEG 4 文件
+        WebM = 带有 VP8 视频编码和 Vorbis 音频编码的 WebM 文件
+         Ogg = 带有 Theora 视频编码和 Vorbis 音频编码的 Ogg 文件
+    -->
+</body>
+<br>
+<!-- Audio(音频) -->
+<body>
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+    </audio>
+    <!-- MP3	audio/mpeg
+         Ogg	audio/ogg
+         Wav	audio/wav -->
+</body>
+<br>
+<!-- Input 类型 -->
+<body>
+    <!-- color 类型用在input字段主要用于选取颜色 -->
+    选择你喜欢的颜色: <input type="color" name="favcolor"><br>
+    <!-- date 类型允许你从一个日期选择器选择一个日期 -->
+    生日: <input type="date" name="bday"><br>
+    <!-- month 类型允许你选择一个月份 定义月与年 (无时区) -->
+    生日 (月和年): <input type="month" name="bdaymonth"><br>
+    <!-- datetime 类型允许你选择一个日期（UTC 时间） -->
+    生日 (日期和时间): <input type="datetime" name="bdaytime"><br>
+    <!-- datetime-local 类型允许你选择一个日期和时间 (无时区) -->
+    生日 (日期和时间): <input type="datetime-local" name="bdaytime"><br>
+    <!-- week 类型允许你选择周和年 -->
+    选择周: <input type="week" name="week_year"><br>
+    <!-- email 类型在提交表单时，会自动验证 email 域的值是否合法有效 -->
+    E-mail: <input type="email" name="email"><br>
+    <!-- number 类型用于应该包含数值的输入域 -->
+    数量 ( 1 到 5 之间 ): <input type="number" name="quantity" min="1" max="5"><br>
+    <!-- range 类型用于应该包含一定范围内数字值的输入域 显示为滑动条 -->
+    <input type="range" name="points" min="1" max="10"><br>
+    <!-- search 类型用于定义一个搜索字段，比如站点搜索或 Google 搜索 -->
+    Search Google: <input type="search" name="googlesearch"><br>
+    <!-- tel 类型定义输入电话号码字段 -->
+    电话号码: <input type="tel" name="usrtel"><br>
+    <!-- time time 类型允许你选择一个时间（无时区） -->
+    选择时间: <input type="time" name="usr_time"><br>
+    <!-- url 类型用于应该包含 URL 地址的输入域 在提交表单时，会自动验证 url 域的值 -->
+    添加您的主页: <input type="url" name="homepage">
+</body>
+<br>
+<!-- 新表单元素 -->
+<body>
+    <!-- <datalist> 元素规定输入域的选项列表 -->
+    <form action="demo-form.php" method="get">
+    <input list="browsers" name="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer"></option>
+        <option value="Chrome"></option>
+        <option value="Safari"></option>
+    </datalist>
+    <input type="submit">
+    </form>
+</body>
+<br>
+<body>
+    <!-- <output> 元素用于不同类型的输出，比如计算或脚本输出 -->
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+        <input type="range" id="a" value="50">100
+        +<input type="number" id="b" value="50">
+        =<output name="x" for="a b"></output>
+    </form>
+</body>
+<br>
+<!-- <section> 语义元素 -->
+<body>
+    <!-- <section> 标签定义文档中的节（section、区段）。比如章节、页眉、页脚或文档中的其他部分 -->
+    <section>
+        <h1>WWF</h1>
+        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+    </section>
+</body>
+</html>

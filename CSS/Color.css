@@ -1,0 +1,44 @@
+/* 直接使用颜色名字 */
+h1 {
+    background-color: tomato;
+    background-color: violet;
+}
+
+/* RGB(red, green, blue) 值 */
+    /* 通常为所有 3 个光源使用相等的值来定义灰色阴影 */
+h1 {
+    background-color: rgb(120,120,120);
+}
+
+/* RGBA(red, green, blue, alpha) 值 */
+    /* alpha 参数是介于 0.0（完全透明）和 1.0（完全不透明）之间的数字 */
+h1 {
+    background-color: rgba(255,99,71,0.4);
+}
+
+/* HEX 值  #rrggbb*/
+    /* rr（红色）、gg（绿色）和 bb（蓝色）是介于 00 和 ff 之间的十六进制值 */
+h1 {
+    background-color: #ff0000;
+    /* 通常为所有 3 个光源使用相等的值来定义灰色阴影 */
+    background-color: #b4b4b4;
+}
+
+/* HSL(hue, saturation, lightness) 值 */
+    /* 色相（hue）是色轮上从 0 到 360 的度数。0 是红色，120 是绿色，240 是蓝色
+       饱和度（saturation）是一个百分比值，0％ 表示灰色阴影，而 100％ 是全色
+       亮度（lightness）也是百分比，0％ 是黑色，50％ 是既不明也不暗，100％是白色 */
+h1 {
+    background-color: hsl(0, 100%, 50%);
+    background-color: hsl(0, 0%, 50%);
+    background-color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 100%, 0%);
+    background-color: hsl(0, 100%, 100%);
+    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(147,50%,47%);
+}
+
+/* HSLA(hue, saturation, lightness, alpha) 值 */
+h1 {
+    background-color: hsla(9, 100%, 64%, 0.6);
+}
