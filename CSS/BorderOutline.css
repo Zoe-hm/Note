@@ -1,0 +1,89 @@
+/* border-style 边框*/
+/* p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;} */
+
+/* border-style: dotted solid double dashed; 
+上边框是虚线
+右边框是实线
+下边框是双线
+左边框是虚线 */
+
+/* border-style: dotted solid double; 
+上边框是虚线
+右和左边框是实线
+下边框是双线 */
+
+/* border-style: dotted solid;
+上和下边框是虚线
+右和左边框是实线 */
+
+/* border-width */
+    /* 将宽度设置为特定大小（以 px、pt、cm、em 计），
+    也可以使用以下三个预定义值之一：
+    thin（通常为 1px）
+    medium（通常为 3px）
+    thick （通常为 5px） */
+p.one {
+    border-style: solid;
+    border-width: 5px;
+}
+p.two {
+    border-style: solid;
+    border-width: medium;
+}
+p.seven {
+    border-style: solid;
+    border-width: 5px 2px 6px 1px;
+}
+p.three {
+    border-style: dotted;
+    border-width: 2px;
+}
+p.four {
+    border-style: dotted;
+    border-width: thick;
+}
+p.five {
+    border-style: double;
+    border-width: 15px;
+}
+p.six {
+    border-style: double;
+    border-width: thick;
+}
+
+/* border-radius */
+p.round1 {
+    border: 2px solid aquamarine;
+    border-radius: 5px;
+}
+p.round2 {
+    border: 2px solid aquamarine;
+    border-radius: 12px;
+}
+
+/* outline-style 轮廓 */
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
+
+p.ex {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: thick;
+}

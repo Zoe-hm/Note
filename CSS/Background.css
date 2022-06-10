@@ -1,0 +1,44 @@
+/* 背景颜色 */
+    /* opacity 属性指定元素的不透明度/透明度。
+    取值范围为 0.0 - 1.0。值越低，越透明 */
+div.first {
+    background-color: aquamarine;
+    opacity: 0.3;
+}
+div.second {
+    background: rgba(0,128,0,0.3);
+}
+
+/* 背景图像 */
+body {
+    /* background-image: url(../images/background.jpg); */
+    background-image: url(../images/backg1.jpeg);
+    /* 图像仅在水平方向重复 */
+    /* background-repeat: repeat-x;  */
+    /* 背景图像仅显示一次 */
+    background-repeat: no-repeat;
+
+    /* 指定背景图像的位置 */
+    background-position: right top;
+    margin-right: 200px; /* 右侧添加了外边距 */
+
+/* 指定背景图像是应该滚动scroll还是固定的fixed */
+    background-attachment: scroll;
+}
+
+/* 可简写成如下 */
+/* body {
+    background: #ffffff url("/i/photo/tree.png") no-repeat right top;
+    margin-right: 200px;
+  } */
+
+/* p {
+    background-image: url(../images/background.jpg);
+} */
+
+/*  顺序:
+    background-color
+    background-image
+    background-repeat
+    background-attachment
+    background-position */
