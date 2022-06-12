@@ -1,0 +1,44 @@
+/* list-style-type 属性指定列表项标记的类型 */
+/* 无序 */
+ul.a {
+    list-style-type: circle;
+}
+  
+ul.b {
+    list-style-type: square;
+}
+ /* 有序 */
+ol.c {
+    list-style-type: upper-roman;
+}
+  
+ol.d {
+    list-style-type: lower-alpha;
+}
+
+/* list-style-image 属性将图像指定为列表项标记 */
+ul {
+    list-style-image: url('../images/atom-solid.svg');
+}
+
+/* list-style-position 属性指定列表项标记（项目符号）的位置 */
+
+/* list-style-type:none 属性也可以用于删除标记/项目符号
+列表还拥有默认的外边距和内边距。
+要删除此内容，请在 <ul> 或 <ol> 中添加 margin:0 和 padding:0 */
+ul.demo {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* list-style 属性是一种简写属性 */
+
+
+/* CSS 中设置表格边框，使用 border 属性 */
+table, th, td {
+    border: 1px solid black;
+}
+table {
+    width: 100%; /* 覆盖整个屏幕（全宽）的表格 */
+}
