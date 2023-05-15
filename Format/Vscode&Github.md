@@ -24,3 +24,6 @@ git branch -vv #发现有库名的main，有origin的main
 之后想要上传，就写：
 git pull Github的库名 main
 在查看远程库：git branch -r就只有一个main了。
+
+6. git add ./Python
+7. git commit -m "Python"
